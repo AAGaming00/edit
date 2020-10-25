@@ -7,8 +7,8 @@ module.exports = class Edit extends Plugin {
     const { editMessage } = await getModule([ 'editMessage', 'sendMessage' ]);
     powercord.api.commands.registerCommand({
       command: 'edit',
-      description: 'Replaces "edited" with the actual edited text that shows up on edited messages.',
-      usage: '{c} <before edited> edited <after edited>',
+      description: 'Send messages, editing in each letter',
+      usage: '{c} <message>',
       executor: (args) => {
         const channel = getChannelId();
         const msg = args.join(' ').split('');

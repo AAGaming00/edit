@@ -29,7 +29,7 @@ module.exports = class Edit extends Plugin {
                 channelId: channel });
               current = current + yes + e;
               yes = '';
-            }, 1000 * i);
+            }, 800 * i);
           });
         }
         );
